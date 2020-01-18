@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_menu"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_foto_menu"
+            android:layout_width="100dp"
+            android:padding="10dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/tv_nama_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:text="Nasi Goreng"/>
+
+            <TextView
+                android:id="@+id/tv_harga_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 15.000,-"
+                android:paddingTop="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/user_order"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Jumlah Order"/>
+
+            <Button
+                android:id="@+id/dlt_order"
+                android:layout_width="69dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:background="@color/colorPrimary"
+                android:text="delete"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
